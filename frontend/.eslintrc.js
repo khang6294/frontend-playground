@@ -1,6 +1,4 @@
-import path from 'path';
-
-export default {
+module.exports = {
   env: {
     browser: true,
     es6: true,
@@ -30,7 +28,7 @@ export default {
     'prettier/@typescript-eslint',
   ],
   parserOptions: {
-    project: path.resolve(__dirname, 'tsconfig.json')
+    project: './tsconfig.json'
   },
   parser: '@typescript-eslint/parser',
   rules: {
