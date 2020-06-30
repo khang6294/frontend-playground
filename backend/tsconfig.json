@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+      "lib": [ "esnext" ],
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "outDir": "dist",
+      "sourceMap": true,
+      "target": "es6",
+      "forceConsistentCasingInFileNames": true,
+      "noImplicitReturns": true,
+      "noImplicitThis": true,
+      "noImplicitAny": true,
+      "strictNullChecks": true,
+      "suppressImplicitAnyIndexErrors": true,
+      "strict": true,
+      "allowSyntheticDefaultImports": true,
+      "skipLibCheck": true,
+      "allowJs": true,
+      "checkJs": true,
+      "esModuleInterop": true,
+      "noFallthroughCasesInSwitch": true,
+      // "noUnusedLocals": true,
+      "baseUrl": "src",
+      // "paths": {
+      //   "@routes/*":         ["src/routes/*"],
+      //   "@controllers/*":    ["src/controllers/*"],
+      // }
+  },
+  "include": [
+    "src",
+    ".",
+  ],
+  "exclude": [
+    "node_modules/*"
+  ]
+}

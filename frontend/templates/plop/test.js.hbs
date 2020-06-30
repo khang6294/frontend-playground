@@ -1,0 +1,11 @@
+import React from 'react';
+import { render, screen } from '@testing-library/react';
+import {{pascalCase name}} from 'components/{{pascalCase name}}';
+
+
+describe('{{pascalCase name}} component', () => {
+  it('it should find a Header', () => {
+    render(<{{pascalCase name}} />);
+    expect(screen.getByText(/test/i)).toBeInTheDocument();
+  });
+})
