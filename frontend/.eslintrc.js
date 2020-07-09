@@ -21,7 +21,6 @@ module.exports = {
     'plugin:react/recommended',
     // As recommended here: https://www.npmjs.com/package/@typescript-eslint/eslint-plugin#recommended-configs
     'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/eslint-recommended',
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
     'plugin:prettier/recommended',
     // This one is to avoid conflict with Prettier
@@ -39,13 +38,7 @@ module.exports = {
     // react-hooks helpful error checks
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
-    '@typescript-eslint/camelcase': [
-        'off', // Django backend variables have underscores
-    ],
-    '@typescript-eslint/ban-ts-ignore': ['off'],
-    '@typescript-eslint/class-name-casing': ['warn'],
     '@typescript-eslint/explicit-function-return-type': ['off'],
-    '@typescript-eslint/interface-name-prefix': ['off'],
     '@typescript-eslint/member-delimiter-style': [
       'warn',
       {

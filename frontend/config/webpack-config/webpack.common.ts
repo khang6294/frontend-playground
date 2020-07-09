@@ -1,7 +1,7 @@
 import webpack from 'webpack';
-import paths from './paths';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
+import paths from './paths';
 
 const commonConfig: webpack.Configuration = {
   entry: paths.entryPath,
@@ -28,7 +28,7 @@ const commonConfig: webpack.Configuration = {
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader']
+        use: ['style-loader', 'css-loader'],
       },
       {
         loader: 'url-loader?limit=100000',
@@ -38,10 +38,7 @@ const commonConfig: webpack.Configuration = {
   },
   resolve: {
     extensions: ['.js', '.ts', '.tsx'],
-    modules: [
-      'node_modules',
-      `${paths.root}/src`,
-    ],
+    modules: ['node_modules', `${paths.root}/src`],
   },
   plugins: [
     new CleanWebpackPlugin(),
