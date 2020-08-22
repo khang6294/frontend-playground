@@ -55,6 +55,7 @@ const commonConfig: webpack.Configuration = {
     }),
     new webpack.ProgressPlugin(),
   ],
+  devtool: 'cheap-source-map',
 };
 
 export default commonConfig;
